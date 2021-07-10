@@ -1,0 +1,33 @@
+net.optimized_memory = 0 
+mini_batch = 1, batch = 1, time_steps = 1, train = 0 
+Create CUDA-stream - 0 
+Create cudnn-handle 0 
+nms_kind: greedynms (1), beta = 0.600000 
+nms_kind: greedynms (1), beta = 0.600000 
+seen 64, trained: 192 K-images (3 Kilo-batches_64) 
+calculation mAP (mean average precision)... 
+Detection layer: 30 - type = 28 
+Detection layer: 37 - type = 28 
+detections_count = 1289, unique_truth_count = 259 
+rank = 0 of ranks = 1289  rank = 100 of ranks = 1289  rank = 200 of ranks = 1289  rank = 300 of ranks = 1289  rank = 400 of ranks = 1289  rank = 500 of ranks = 1289  rank = 600 of ranks = 1289  rank = 700 of ranks = 1289  rank = 800 of ranks = 1289  rank = 900 of ranks = 1289  rank = 1000 of ranks = 1289  rank = 1100 of ranks = 1289  rank = 1200 of ranks = 1289 class_id = 0, name = Mensa, ap = 67.07%   	 (TP = 17, FP = 4) 
+class_id = 1, name = AKK, ap = 96.63%   	 (TP = 15, FP = 3) 
+class_id = 2, name = Audimax, ap = 74.75%   	 (TP = 9, FP = 3) 
+class_id = 3, name = Neue Bib, ap = 67.48%   	 (TP = 16, FP = 4) 
+class_id = 4, name = Alte Bib, ap = 79.39%   	 (TP = 20, FP = 10) 
+class_id = 5, name = Studierendenwerk, ap = 77.70%   	 (TP = 13, FP = 4) 
+class_id = 6, name = Lernzentrum, ap = 94.22%   	 (TP = 14, FP = 4) 
+class_id = 7, name = Mathebau, ap = 90.48%   	 (TP = 10, FP = 6) 
+class_id = 8, name = Harber-Bosch-Reaktor, ap = 99.05%   	 (TP = 14, FP = 2) 
+class_id = 9, name = Statue am Ehrenhof, ap = 93.25%   	 (TP = 13, FP = 4) 
+class_id = 10, name = Heinrich-Hertz-Denkmal, ap = 78.20%   	 (TP = 21, FP = 7) 
+class_id = 11, name = Kolben, ap = 88.96%   	 (TP = 10, FP = 5) 
+class_id = 12, name = Waermeflasche, ap = 94.44%   	 (TP = 17, FP = 1) 
+class_id = 13, name = Gruenderschmiede, ap = 100.00%   	 (TP = 11, FP = 0) 
+for conf_thresh = 0.25, precision = 0.78, recall = 0.77, F1-score = 0.78 
+for conf_thresh = 0.25, TP = 200, FP = 57, FN = 59, average IoU = 59.69 % 
+IoU threshold = 50 %, used Area-Under-Curve for each unique Recall 
+mean average precision (mAP@0.50) = 0.858297, or 85.83 % 
+Set -points flag: 
+`-points 101` for MS COCO 
+`-points 11` for PascalVOC 2007 (uncomment `difficult` in voc.data) 
+`-points 0` (AUC) for ImageNet, PascalVOC 2010-2012, your custom dataset 
