@@ -1,5 +1,0 @@
-classes = 14 
-train = /aisscv/model/20210708_204151/run_5/train.txt 
-valid = /aisscv/model/20210708_204151/run_5/test.txt 
-names = /aisscv/model/20210708_204151/run_5/obj/classes.txt 
-backup = /aisscv/model/20210708_204151/run_5/weights 

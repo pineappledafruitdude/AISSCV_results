@@ -1,0 +1,33 @@
+net.optimized_memory = 0 
+mini_batch = 1, batch = 1, time_steps = 1, train = 0 
+Create CUDA-stream - 0 
+Create cudnn-handle 0 
+nms_kind: greedynms (1), beta = 0.600000 
+nms_kind: greedynms (1), beta = 0.600000 
+seen 64, trained: 192 K-images (3 Kilo-batches_64) 
+calculation mAP (mean average precision)... 
+Detection layer: 30 - type = 28 
+Detection layer: 37 - type = 28 
+detections_count = 3773, unique_truth_count = 264 
+rank = 0 of ranks = 3773  rank = 100 of ranks = 3773  rank = 200 of ranks = 3773  rank = 300 of ranks = 3773  rank = 400 of ranks = 3773  rank = 500 of ranks = 3773  rank = 600 of ranks = 3773  rank = 700 of ranks = 3773  rank = 800 of ranks = 3773  rank = 900 of ranks = 3773  rank = 1000 of ranks = 3773  rank = 1100 of ranks = 3773  rank = 1200 of ranks = 3773  rank = 1300 of ranks = 3773  rank = 1400 of ranks = 3773  rank = 1500 of ranks = 3773  rank = 1600 of ranks = 3773  rank = 1700 of ranks = 3773  rank = 1800 of ranks = 3773  rank = 1900 of ranks = 3773  rank = 2000 of ranks = 3773  rank = 2100 of ranks = 3773  rank = 2200 of ranks = 3773  rank = 2300 of ranks = 3773  rank = 2400 of ranks = 3773  rank = 2500 of ranks = 3773  rank = 2600 of ranks = 3773  rank = 2700 of ranks = 3773  rank = 2800 of ranks = 3773  rank = 2900 of ranks = 3773  rank = 3000 of ranks = 3773  rank = 3100 of ranks = 3773  rank = 3200 of ranks = 3773  rank = 3300 of ranks = 3773  rank = 3400 of ranks = 3773  rank = 3500 of ranks = 3773  rank = 3600 of ranks = 3773  rank = 3700 of ranks = 3773 class_id = 0, name = Mensa, ap = 59.55%   	 (TP = 12, FP = 4) 
+class_id = 1, name = AKK, ap = 70.98%   	 (TP = 3, FP = 6) 
+class_id = 2, name = Audimax, ap = 45.51%   	 (TP = 4, FP = 3) 
+class_id = 3, name = Neue Bib, ap = 29.75%   	 (TP = 1, FP = 5) 
+class_id = 4, name = Alte Bib, ap = 42.60%   	 (TP = 9, FP = 6) 
+class_id = 5, name = Studierendenwerk, ap = 37.39%   	 (TP = 8, FP = 4) 
+class_id = 6, name = Lernzentrum, ap = 96.53%   	 (TP = 15, FP = 7) 
+class_id = 7, name = Mathebau, ap = 73.62%   	 (TP = 6, FP = 5) 
+class_id = 8, name = Harber-Bosch-Reaktor, ap = 80.48%   	 (TP = 10, FP = 8) 
+class_id = 9, name = Statue am Ehrenhof, ap = 67.84%   	 (TP = 8, FP = 6) 
+class_id = 10, name = Heinrich-Hertz-Denkmal, ap = 46.33%   	 (TP = 9, FP = 9) 
+class_id = 11, name = Kolben, ap = 69.16%   	 (TP = 7, FP = 0) 
+class_id = 12, name = Waermeflasche, ap = 56.11%   	 (TP = 10, FP = 6) 
+class_id = 13, name = Gruenderschmiede, ap = 72.41%   	 (TP = 8, FP = 2) 
+for conf_thresh = 0.25, precision = 0.61, recall = 0.42, F1-score = 0.49 
+for conf_thresh = 0.25, TP = 110, FP = 71, FN = 154, average IoU = 42.07 % 
+IoU threshold = 50 %, used Area-Under-Curve for each unique Recall 
+mean average precision (mAP@0.50) = 0.605898, or 60.59 % 
+Set -points flag: 
+`-points 101` for MS COCO 
+`-points 11` for PascalVOC 2007 (uncomment `difficult` in voc.data) 
+`-points 0` (AUC) for ImageNet, PascalVOC 2010-2012, your custom dataset 

@@ -1,0 +1,33 @@
+color: true
+final_img_size: 416
+folds: 5
+input_folder: /aisscv/preprocessing/data
+max_batch_size: 3000
+number_of_augmentations: 10
+occlude: false
+org_classes_txt: /aisscv/preprocessing/data/classes.txt
+org_yolo_cfg: /aisscv/preprocessing/../model/darknet_cfgs/yolov4-tiny-custom.cfg
+output_folder: /aisscv/model/20210711_093324
+resized_img_size: 600
+transform: "Compose([\n  RandomCrop(always_apply=False, p=1, height=416, width=416),\n\
+  \  FancyPCA(always_apply=False, p=0.5, alpha=0.1),\n  ColorJitter(always_apply=False,\
+  \ p=0.75, brightness=[0.7, 1.3], contrast=[0.8, 1.2], saturation=[0.85, 1.15], hue=[-0.07,\
+  \ 0.07]),\n  ShiftScaleRotate(always_apply=False, p=0.75, shift_limit_x=(-0.0325,\
+  \ 0.0325), shift_limit_y=(-0.0325, 0.0325), scale_limit=(-0.050000000000000044,\
+  \ 0.050000000000000044), rotate_limit=(-25, 25), interpolation=1, border_mode=4,\
+  \ value=None, mask_value=None),\n  CLAHE(always_apply=False, p=0.1, clip_limit=(1,\
+  \ 4.0), tile_grid_size=(8, 8)),\n  Equalize(always_apply=False, p=0.7, mode='cv',\
+  \ by_channels=True),\n  HorizontalFlip(always_apply=False, p=0.3),\n  OneOf([\n\
+  \    Sharpen(always_apply=False, p=0.05, alpha=(0.2, 0.3), lightness=(0.5, 0.7)),\n\
+  \    Blur(always_apply=False, p=0.2, blur_limit=(2, 3)),\n    MotionBlur(always_apply=False,\
+  \ p=0.2, blur_limit=(3, 7)),\n  ], p=1),\n  OneOf([\n    RandomRain(always_apply=False,\
+  \ p=1, slant_lower=-1, slant_upper=1, drop_length=2, drop_width=1, drop_color=(200,\
+  \ 200, 200), blur_value=5, brightness_coefficient=0.7, rain_type='drizzle'),\n \
+  \   RandomSnow(always_apply=False, p=1, snow_point_lower=0.05, snow_point_upper=0.3,\
+  \ brightness_coeff=2.5),\n    RandomFog(always_apply=False, p=1, fog_coef_lower=0.3,\
+  \ fog_coef_upper=0.6, alpha_coef=0.08),\n  ], p=0.15),\n  RandomGamma(always_apply=False,\
+  \ p=0.5, gamma_limit=(80, 120), eps=None),\n  GaussNoise(always_apply=False, p=0.3,\
+  \ var_limit=(1.0, 5.0), per_channel=False, mean=0),\n], p=1.0, bbox_params={'format':\
+  \ 'yolo', 'label_fields': None, 'min_area': 0.0, 'min_visibility': 0.2, 'check_each_transform':\
+  \ True}, keypoint_params=None, additional_targets={})"
+transform_nbr: 2
