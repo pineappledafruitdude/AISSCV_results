@@ -1,0 +1,4 @@
+classes = 14 
+train = /aisscv/model/20210714_084032/run_1/train.txt 
+names = /aisscv/model/20210714_084032/run_1/obj/classes.txt 
+backup = /aisscv/model/20210714_084032/run_1/weights 

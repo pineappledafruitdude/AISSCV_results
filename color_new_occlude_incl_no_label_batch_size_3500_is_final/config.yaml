@@ -1,0 +1,28 @@
+color: true
+final_img_size: 416
+folds: 1
+include_no_label: true
+input_folder: /aisscv/preprocessing/data
+is_final: true
+max_batch_size: 3500
+number_of_augmentations: 10
+occlude: true
+org_classes_txt: /aisscv/preprocessing/data/classes.txt
+org_yolo_cfg: /aisscv/preprocessing/../model/darknet_cfgs/yolov4-tiny-custom.cfg
+output_folder: /aisscv/model/20210714_084032
+resized_img_size: 600
+transform: "Compose([\n  RandomCrop(always_apply=False, p=1, height=416, width=416),\n\
+  \  ShiftScaleRotate(always_apply=False, p=0.5, shift_limit_x=(-0.0325, 0.0325),\
+  \ shift_limit_y=(-0.0325, 0.0325), scale_limit=(-0.050000000000000044, 0.050000000000000044),\
+  \ rotate_limit=(-25, 25), interpolation=1, border_mode=4, value=None, mask_value=None),\n\
+  \  CLAHE(always_apply=False, p=0.5, clip_limit=(1, 4.0), tile_grid_size=(8, 8)),\n\
+  \  Equalize(always_apply=False, p=0.7, mode='cv', by_channels=False),\n  HorizontalFlip(always_apply=False,\
+  \ p=0.3),\n  Sharpen(always_apply=False, p=0.05, alpha=(0.2, 0.3), lightness=(0.5,\
+  \ 0.7)),\n  RandomBrightnessContrast(always_apply=False, p=0.5, brightness_limit=(-0.1,\
+  \ 0.1), contrast_limit=(-0.1, 0.1), brightness_by_max=True),\n  RandomGamma(always_apply=False,\
+  \ p=0.5, gamma_limit=(80, 120), eps=None),\n  Blur(always_apply=False, p=0.3, blur_limit=(2,\
+  \ 3)),\n  GaussNoise(always_apply=False, p=0.5, var_limit=(1.0, 5.0), per_channel=False,\
+  \ mean=0),\n], p=1.0, bbox_params={'format': 'yolo', 'label_fields': None, 'min_area':\
+  \ 0.0, 'min_visibility': 0.2, 'check_each_transform': True}, keypoint_params=None,\
+  \ additional_targets={})"
+transform_nbr: 1
