@@ -1,0 +1,33 @@
+net.optimized_memory = 0 
+mini_batch = 1, batch = 1, time_steps = 1, train = 0 
+Create CUDA-stream - 0 
+Create cudnn-handle 0 
+nms_kind: greedynms (1), beta = 0.600000 
+nms_kind: greedynms (1), beta = 0.600000 
+seen 64, trained: 224 K-images (3 Kilo-batches_64) 
+calculation mAP (mean average precision)... 
+Detection layer: 30 - type = 28 
+Detection layer: 37 - type = 28 
+detections_count = 562, unique_truth_count = 128 
+rank = 0 of ranks = 562  rank = 100 of ranks = 562  rank = 200 of ranks = 562  rank = 300 of ranks = 562  rank = 400 of ranks = 562  rank = 500 of ranks = 562 class_id = 0, name = Mensa, ap = 93.31%   	 (TP = 13, FP = 5) 
+class_id = 1, name = AKK, ap = 77.78%   	 (TP = 7, FP = 3) 
+class_id = 2, name = Audimax, ap = 82.29%   	 (TP = 6, FP = 2) 
+class_id = 3, name = Neue Bib, ap = 77.27%   	 (TP = 8, FP = 1) 
+class_id = 4, name = Alte Bib, ap = 88.74%   	 (TP = 10, FP = 3) 
+class_id = 5, name = Studierendenwerk, ap = 97.27%   	 (TP = 10, FP = 2) 
+class_id = 6, name = Lernzentrum, ap = 100.00%   	 (TP = 7, FP = 3) 
+class_id = 7, name = Mathebau, ap = 88.10%   	 (TP = 6, FP = 1) 
+class_id = 8, name = Harber-Bosch-Reaktor, ap = 100.00%   	 (TP = 7, FP = 0) 
+class_id = 9, name = Statue am Ehrenhof, ap = 90.48%   	 (TP = 5, FP = 1) 
+class_id = 10, name = Heinrich-Hertz-Denkmal, ap = 89.29%   	 (TP = 13, FP = 1) 
+class_id = 11, name = Kolben, ap = 100.00%   	 (TP = 7, FP = 0) 
+class_id = 12, name = Waermeflasche, ap = 100.00%   	 (TP = 10, FP = 1) 
+class_id = 13, name = Gruenderschmiede, ap = 100.00%   	 (TP = 5, FP = 0) 
+for conf_thresh = 0.25, precision = 0.83, recall = 0.89, F1-score = 0.86 
+for conf_thresh = 0.25, TP = 114, FP = 23, FN = 14, average IoU = 64.65 % 
+IoU threshold = 50 %, used Area-Under-Curve for each unique Recall 
+mean average precision (mAP@0.50) = 0.917511, or 91.75 % 
+Set -points flag: 
+`-points 101` for MS COCO 
+`-points 11` for PascalVOC 2007 (uncomment `difficult` in voc.data) 
+`-points 0` (AUC) for ImageNet, PascalVOC 2010-2012, your custom dataset 
