@@ -1,0 +1,33 @@
+net.optimized_memory = 0 
+mini_batch = 1, batch = 1, time_steps = 1, train = 0 
+Create CUDA-stream - 0 
+Create cudnn-handle 0 
+nms_kind: greedynms (1), beta = 0.600000 
+nms_kind: greedynms (1), beta = 0.600000 
+seen 64, trained: 192 K-images (3 Kilo-batches_64) 
+calculation mAP (mean average precision)... 
+Detection layer: 30 - type = 28 
+Detection layer: 37 - type = 28 
+detections_count = 656, unique_truth_count = 131 
+rank = 0 of ranks = 656  rank = 100 of ranks = 656  rank = 200 of ranks = 656  rank = 300 of ranks = 656  rank = 400 of ranks = 656  rank = 500 of ranks = 656  rank = 600 of ranks = 656 class_id = 0, name = Mensa, ap = 90.33%   	 (TP = 13, FP = 6) 
+class_id = 1, name = AKK, ap = 98.21%   	 (TP = 7, FP = 4) 
+class_id = 2, name = Audimax, ap = 83.33%   	 (TP = 4, FP = 2) 
+class_id = 3, name = Neue Bib, ap = 90.97%   	 (TP = 10, FP = 2) 
+class_id = 4, name = Alte Bib, ap = 93.50%   	 (TP = 12, FP = 2) 
+class_id = 5, name = Studierendenwerk, ap = 49.69%   	 (TP = 4, FP = 3) 
+class_id = 6, name = Lernzentrum, ap = 100.00%   	 (TP = 8, FP = 0) 
+class_id = 7, name = Mathebau, ap = 93.33%   	 (TP = 5, FP = 2) 
+class_id = 8, name = Harber-Bosch-Reaktor, ap = 83.33%   	 (TP = 5, FP = 1) 
+class_id = 9, name = Statue am Ehrenhof, ap = 98.33%   	 (TP = 9, FP = 0) 
+class_id = 10, name = Heinrich-Hertz-Denkmal, ap = 87.83%   	 (TP = 11, FP = 4) 
+class_id = 11, name = Kolben, ap = 100.00%   	 (TP = 7, FP = 2) 
+class_id = 12, name = Waermeflasche, ap = 100.00%   	 (TP = 9, FP = 0) 
+class_id = 13, name = Gruenderschmiede, ap = 100.00%   	 (TP = 5, FP = 0) 
+for conf_thresh = 0.25, precision = 0.80, recall = 0.83, F1-score = 0.81 
+for conf_thresh = 0.25, TP = 109, FP = 28, FN = 22, average IoU = 59.28 % 
+IoU threshold = 50 %, used Area-Under-Curve for each unique Recall 
+mean average precision (mAP@0.50) = 0.906342, or 90.63 % 
+Set -points flag: 
+`-points 101` for MS COCO 
+`-points 11` for PascalVOC 2007 (uncomment `difficult` in voc.data) 
+`-points 0` (AUC) for ImageNet, PascalVOC 2010-2012, your custom dataset 
