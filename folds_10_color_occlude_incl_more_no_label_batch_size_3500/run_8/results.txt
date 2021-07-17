@@ -1,0 +1,33 @@
+net.optimized_memory = 0 
+mini_batch = 1, batch = 1, time_steps = 1, train = 0 
+Create CUDA-stream - 0 
+Create cudnn-handle 0 
+nms_kind: greedynms (1), beta = 0.600000 
+nms_kind: greedynms (1), beta = 0.600000 
+seen 64, trained: 224 K-images (3 Kilo-batches_64) 
+calculation mAP (mean average precision)... 
+Detection layer: 30 - type = 28 
+Detection layer: 37 - type = 28 
+detections_count = 599, unique_truth_count = 130 
+rank = 0 of ranks = 599  rank = 100 of ranks = 599  rank = 200 of ranks = 599  rank = 300 of ranks = 599  rank = 400 of ranks = 599  rank = 500 of ranks = 599 class_id = 0, name = Mensa, ap = 77.55%   	 (TP = 11, FP = 3) 
+class_id = 1, name = AKK, ap = 100.00%   	 (TP = 7, FP = 1) 
+class_id = 2, name = Audimax, ap = 84.03%   	 (TP = 6, FP = 5) 
+class_id = 3, name = Neue Bib, ap = 80.42%   	 (TP = 12, FP = 1) 
+class_id = 4, name = Alte Bib, ap = 85.18%   	 (TP = 11, FP = 2) 
+class_id = 5, name = Studierendenwerk, ap = 90.69%   	 (TP = 10, FP = 3) 
+class_id = 6, name = Lernzentrum, ap = 95.94%   	 (TP = 7, FP = 1) 
+class_id = 7, name = Mathebau, ap = 100.00%   	 (TP = 5, FP = 3) 
+class_id = 8, name = Harber-Bosch-Reaktor, ap = 100.00%   	 (TP = 7, FP = 0) 
+class_id = 9, name = Statue am Ehrenhof, ap = 85.71%   	 (TP = 6, FP = 0) 
+class_id = 10, name = Heinrich-Hertz-Denkmal, ap = 98.48%   	 (TP = 11, FP = 2) 
+class_id = 11, name = Kolben, ap = 57.14%   	 (TP = 4, FP = 1) 
+class_id = 12, name = Waermeflasche, ap = 96.03%   	 (TP = 8, FP = 1) 
+class_id = 13, name = Gruenderschmiede, ap = 96.67%   	 (TP = 4, FP = 1) 
+for conf_thresh = 0.25, precision = 0.82, recall = 0.84, F1-score = 0.83 
+for conf_thresh = 0.25, TP = 109, FP = 24, FN = 21, average IoU = 63.14 % 
+IoU threshold = 50 %, used Area-Under-Curve for each unique Recall 
+mean average precision (mAP@0.50) = 0.891320, or 89.13 % 
+Set -points flag: 
+`-points 101` for MS COCO 
+`-points 11` for PascalVOC 2007 (uncomment `difficult` in voc.data) 
+`-points 0` (AUC) for ImageNet, PascalVOC 2010-2012, your custom dataset 

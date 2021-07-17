@@ -1,0 +1,33 @@
+net.optimized_memory = 0 
+mini_batch = 1, batch = 1, time_steps = 1, train = 0 
+Create CUDA-stream - 0 
+Create cudnn-handle 0 
+nms_kind: greedynms (1), beta = 0.600000 
+nms_kind: greedynms (1), beta = 0.600000 
+seen 64, trained: 224 K-images (3 Kilo-batches_64) 
+calculation mAP (mean average precision)... 
+Detection layer: 30 - type = 28 
+Detection layer: 37 - type = 28 
+detections_count = 527, unique_truth_count = 128 
+rank = 0 of ranks = 527  rank = 100 of ranks = 527  rank = 200 of ranks = 527  rank = 300 of ranks = 527  rank = 400 of ranks = 527  rank = 500 of ranks = 527 class_id = 0, name = Mensa, ap = 86.89%   	 (TP = 14, FP = 6) 
+class_id = 1, name = AKK, ap = 75.31%   	 (TP = 7, FP = 3) 
+class_id = 2, name = Audimax, ap = 81.17%   	 (TP = 6, FP = 2) 
+class_id = 3, name = Neue Bib, ap = 93.11%   	 (TP = 10, FP = 4) 
+class_id = 4, name = Alte Bib, ap = 89.74%   	 (TP = 11, FP = 0) 
+class_id = 5, name = Studierendenwerk, ap = 100.00%   	 (TP = 10, FP = 0) 
+class_id = 6, name = Lernzentrum, ap = 100.00%   	 (TP = 8, FP = 2) 
+class_id = 7, name = Mathebau, ap = 91.67%   	 (TP = 6, FP = 3) 
+class_id = 8, name = Harber-Bosch-Reaktor, ap = 100.00%   	 (TP = 7, FP = 0) 
+class_id = 9, name = Statue am Ehrenhof, ap = 82.69%   	 (TP = 5, FP = 1) 
+class_id = 10, name = Heinrich-Hertz-Denkmal, ap = 74.93%   	 (TP = 11, FP = 4) 
+class_id = 11, name = Kolben, ap = 100.00%   	 (TP = 7, FP = 0) 
+class_id = 12, name = Waermeflasche, ap = 100.00%   	 (TP = 10, FP = 0) 
+class_id = 13, name = Gruenderschmiede, ap = 100.00%   	 (TP = 5, FP = 0) 
+for conf_thresh = 0.25, precision = 0.82, recall = 0.91, F1-score = 0.87 
+for conf_thresh = 0.25, TP = 117, FP = 25, FN = 11, average IoU = 63.32 % 
+IoU threshold = 50 %, used Area-Under-Curve for each unique Recall 
+mean average precision (mAP@0.50) = 0.911079, or 91.11 % 
+Set -points flag: 
+`-points 101` for MS COCO 
+`-points 11` for PascalVOC 2007 (uncomment `difficult` in voc.data) 
+`-points 0` (AUC) for ImageNet, PascalVOC 2010-2012, your custom dataset 
