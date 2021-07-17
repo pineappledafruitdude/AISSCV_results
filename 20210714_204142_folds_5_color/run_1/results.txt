@@ -1,33 +1,0 @@
-net.optimized_memory = 0 
-mini_batch = 1, batch = 1, time_steps = 1, train = 0 
-Create CUDA-stream - 0 
-Create cudnn-handle 0 
-nms_kind: greedynms (1), beta = 0.600000 
-nms_kind: greedynms (1), beta = 0.600000 
-seen 64, trained: 192 K-images (3 Kilo-batches_64) 
-calculation mAP (mean average precision)... 
-Detection layer: 30 - type = 28 
-Detection layer: 37 - type = 28 
-detections_count = 1144, unique_truth_count = 260 
-rank = 0 of ranks = 1144  rank = 100 of ranks = 1144  rank = 200 of ranks = 1144  rank = 300 of ranks = 1144  rank = 400 of ranks = 1144  rank = 500 of ranks = 1144  rank = 600 of ranks = 1144  rank = 700 of ranks = 1144  rank = 800 of ranks = 1144  rank = 900 of ranks = 1144  rank = 1000 of ranks = 1144  rank = 1100 of ranks = 1144 class_id = 0, name = Mensa, ap = 83.34%   	 (TP = 24, FP = 8) 
-class_id = 1, name = AKK, ap = 85.52%   	 (TP = 15, FP = 6) 
-class_id = 2, name = Audimax, ap = 84.24%   	 (TP = 9, FP = 4) 
-class_id = 3, name = Neue Bib, ap = 70.79%   	 (TP = 15, FP = 10) 
-class_id = 4, name = Alte Bib, ap = 83.19%   	 (TP = 23, FP = 5) 
-class_id = 5, name = Studierendenwerk, ap = 85.01%   	 (TP = 13, FP = 4) 
-class_id = 6, name = Lernzentrum, ap = 99.22%   	 (TP = 15, FP = 4) 
-class_id = 7, name = Mathebau, ap = 98.48%   	 (TP = 11, FP = 7) 
-class_id = 8, name = Harber-Bosch-Reaktor, ap = 96.66%   	 (TP = 12, FP = 0) 
-class_id = 9, name = Statue am Ehrenhof, ap = 83.75%   	 (TP = 13, FP = 0) 
-class_id = 10, name = Heinrich-Hertz-Denkmal, ap = 80.76%   	 (TP = 22, FP = 6) 
-class_id = 11, name = Kolben, ap = 92.86%   	 (TP = 12, FP = 0) 
-class_id = 12, name = Waermeflasche, ap = 97.15%   	 (TP = 18, FP = 1) 
-class_id = 13, name = Gruenderschmiede, ap = 100.00%   	 (TP = 11, FP = 1) 
-for conf_thresh = 0.25, precision = 0.79, recall = 0.82, F1-score = 0.81 
-for conf_thresh = 0.25, TP = 213, FP = 56, FN = 47, average IoU = 60.53 % 
-IoU threshold = 50 %, used Area-Under-Curve for each unique Recall 
-mean average precision (mAP@0.50) = 0.886392, or 88.64 % 
-Set -points flag: 
-`-points 101` for MS COCO 
-`-points 11` for PascalVOC 2007 (uncomment `difficult` in voc.data) 
-`-points 0` (AUC) for ImageNet, PascalVOC 2010-2012, your custom dataset 
